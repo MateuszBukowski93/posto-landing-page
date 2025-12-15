@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
       <div className="hidden md:flex items-center space-x-8 mr-12">
         <a href="#features" className="text-gray-600 hover:text-gray-800 font-medium transition-colors">Features</a>
         <a href="#testimonials" className="text-gray-600 hover:text-gray-800 font-medium transition-colors">Testimonials</a>
-        <a href="#pricing"className="text-gray-600 hover:text-gray-800 font-medium transition-colors">Pricing</a>
+        <a href="#pricing" className="text-gray-600 hover:text-gray-800 font-medium transition-colors">Pricing</a>
       </div>
     </nav>
   );

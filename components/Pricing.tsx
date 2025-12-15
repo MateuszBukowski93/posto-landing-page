@@ -16,7 +16,7 @@ export const Pricing: React.FC = () => {
                         No hidden fees. No credit card required.
                     </p>
                 </div>
-
+                
                 <div className="rounded-4xl p-8 lg:p-12 shadow-sm border-none bg-gray-50 hover:bg-green-50/50 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
                     <div className="absolute top-0 left-0 p-5 group-hover:scale-110 transition-transform bg-green-100 rounded-2xl mt-5 ml-5 w-14 h-14 flex items-center justify-center shrink-0">
                         <Icon name="attach_money" className="text-green-600 text-2xl" />
