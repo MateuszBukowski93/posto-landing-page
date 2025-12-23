@@ -19,17 +19,42 @@ export const Hero: React.FC = () => {
         </p>
 
       <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-        <button className="bg-green-400 hover:bg-green-500 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg shadow-green-200 flex items-center justify-center transition-all transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
-          <Icon name="ios" className="mr-2" />
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-green-400 hover:bg-green-500 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg shadow-green-200 flex items-center justify-center transition-all transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+        >
+          <Icon name="ios" className="mr-2 w-12 h-8" />
           <span>App Store</span>
-        </button>
-        <button className="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg flex items-center justify-center transition-all transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer">
-          <Icon name="android" className="mr-2" />
+        </a>
+        <a
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noreferrer"
+          className="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg flex items-center justify-center transition-all transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+        >
+          <Icon name="android" className="mr-2 w-12 h-8" />
           <span>Google Play</span>
-        </button>
+        </a>
       </div>
       
-      <div className="mt-8 flex items-center justify-center lg:justify-start space-x-4 text-sm text-gray-500">
+      <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-600">
+        <div className="flex items-center space-x-2">
+          <Icon name="check-circle" className="text-green-500 w-5 h-5" filled />
+          <span className="font-medium">100% Free</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Icon name="check-circle" className="text-green-500 w-5 h-5" filled />
+          <span className="font-medium">No Ads</span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Icon name="check-circle" className="text-green-500 w-5 h-5" filled />
+          <span className="font-medium">No Subscriptions</span>
+        </div>
+      </div>
+      
+      <div className="mt-6 flex items-center justify-center lg:justify-start space-x-4 text-sm text-gray-500">
         <div className="flex -space-x-2">
            {[1,2,3,4].map(i => (
              <div key={i} className="w-8 h-8 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden">
